@@ -2,8 +2,6 @@
 A computer vision robot that detects and tracks faces in real time, combining camera input, embedded control, and motion response for interactive robotics applications.
 
 
-# Face Tracking Robot
-
 ## Overview
 This project is a computer vision-based robot designed to detect and track a human face in real time using a camera and motorized motion control. The system combines image processing with robotics to keep a detected face centered in view, creating an interactive demonstration of perception-driven movement.
 

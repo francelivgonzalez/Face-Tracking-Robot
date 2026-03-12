@@ -1,62 +1,65 @@
 # Face-Tracking-Robot
 A computer vision robot that detects and tracks faces in real time, combining camera input, embedded control, and motion response for interactive robotics applications.
 
-
 ## Overview
-This project is a computer vision-based robot designed to detect and track a human face in real time using a camera and motorized motion control. The system combines image processing with robotics to keep a detected face centered in view, creating an interactive demonstration of perception-driven movement.
+This project is a face-tracking robotic system developed through the Robotics and Automation Society at Texas State University. The platform uses a Raspberry Pi 5 for real-time vision processing and combines Python with OpenCV for face detection alongside C++ servo control for responsive tracking motion.
 
-This project was built to strengthen skills in computer vision, robotics integration, and real-time control.
+The system is designed to keep a detected face centered in view while also logging tracking performance for later benchmarking.
 
 ## Objective
 The purpose of this project was to:
-- detect human faces from live camera input
-- process image data in real time
-- command motors or servos based on face position
-- connect computer vision outputs to robotic motion
-- demonstrate perception-to-action behavior in a robotic system
+- detect and track faces in real time
+- achieve responsive motion with less than 200 ms latency
+- combine computer vision with servo-based actuation
+- build modular integration between perception, control, and logging
+- benchmark tracking accuracy through structured data collection
+
+## Technologies Used
+- Raspberry Pi 5
+- Python
+- OpenCV
+- C++
+- servo control
+- SQL logging
 
 ## Features
-- real-time face detection
-- camera-based tracking
-- motor or servo actuation based on face position
-- interactive robotic response
-- modular vision and control pipeline
-
-## Tools and Technologies
-- Python or C++
-- OpenCV
-- Camera module
-- Microcontroller or embedded compute platform
-- Servo motors or drive system
-- Robotics integration and testing tools
+- real-time facial tracking
+- sub-200 ms response target
+- Python-based computer vision pipeline
+- C++ servo control integration
+- modular system design
+- SQL logging for accuracy benchmarking
 
 ## Skills Demonstrated
-- Computer vision
-- Real-time image processing
-- Robotics control
-- Hardware/software integration
-- Debugging perception systems
-- Motion-response logic
+- computer vision
+- embedded and robotics integration
+- Python and C++
+- motion control
+- latency-aware system design
+- performance benchmarking
+- technical documentation
 
 ## System Workflow
-1. The camera captures live video frames.
-2. The vision algorithm detects a face in the frame.
-3. The system calculates the face position relative to the center.
-4. Control commands are generated to move the robot or camera mount.
-5. The robot repositions to keep the face in view.
+1. The camera captures live image frames.
+2. OpenCV detects a face within the frame.
+3. The system calculates position error relative to the frame center.
+4. Servo control commands reposition the robot or mounted camera.
+5. Tracking data is logged for performance evaluation.
 
 ## Repository Contents
-- detection and tracking code
-- hardware integration notes
-- motor control logic
-- testing documentation
+- face detection code
+- servo control modules
+- SQL logging scripts
+- testing notes
+- benchmarking results
 - demo media
 
 ## Future Improvements
-- improve robustness under lighting changes
-- convert to grayscale to improve speed
-- integrate pan-tilt stabilization
-- expand to full body tracking
+- improve tracking robustness under movement and lighting variation
+- expand to multi-face selection logic
+- reduce jitter in servo response
+- add visual dashboard for benchmarking results
 
 ## Author
 Franceli Gonzalez
+Texas State University | Robotics and Automation Society
